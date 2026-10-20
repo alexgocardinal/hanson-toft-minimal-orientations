@@ -11,7 +11,7 @@ Regenerate the six certificate modules with:
     python3 generate_lean_certificates.py --ks 4,5,6,7,8,9
 
 The generator assigns consecutive clause IDs, rewrites hint references,
-omits deletions, and splits large arrays into smaller definitions.
+omits deletions, and embeds numeric data as text parsed inside Lean.
 
 The certificate proofs use the standard-library LRAT soundness theorem
 and `decide +native`. Their axiom reports include native-evaluation
