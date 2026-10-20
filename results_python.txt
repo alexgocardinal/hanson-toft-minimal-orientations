@@ -1,0 +1,41 @@
+H_4: |V|=14, |E|=28, Δ=5
+H_4: verified (k−1)-colorings of all 28 edge deletions
+H_5: |V|=21, |E|=56, Δ=8
+H_5: verified (k−1)-colorings of all 56 edge deletions
+H_6: |V|=28, |E|=91, Δ=11
+H_6: verified (k−1)-colorings of all 91 edge deletions
+H_7: |V|=35, |E|=133, Δ=14
+H_7: verified (k−1)-colorings of all 133 edge deletions
+H_8: |V|=42, |E|=182, Δ=17
+H_8: verified (k−1)-colorings of all 182 edge deletions
+H_9: |V|=49, |E|=238, Δ=20
+H_9: verified (k−1)-colorings of all 238 edge deletions
+H_10: |V|=56, |E|=301, Δ=23
+H_10: verified (k−1)-colorings of all 301 edge deletions
+H_11: |V|=63, |E|=371, Δ=26
+H_11: verified (k−1)-colorings of all 371 edge deletions
+H_12: |V|=70, |E|=448, Δ=29
+H_12: verified (k−1)-colorings of all 448 edge deletions
+H_13: |V|=77, |E|=532, Δ=32
+H_13: verified (k−1)-colorings of all 532 edge deletions
+H_14: |V|=84, |E|=623, Δ=35
+H_14: verified (k−1)-colorings of all 623 edge deletions
+H_15: |V|=91, |E|=721, Δ=38
+H_15: verified (k−1)-colorings of all 721 edge deletions
+H_16: |V|=98, |E|=826, Δ=41
+H_16: verified (k−1)-colorings of all 826 edge deletions
+H_17: |V|=105, |E|=938, Δ=44
+H_17: verified (k−1)-colorings of all 938 edge deletions
+H_18: |V|=112, |E|=1057, Δ=47
+H_18: verified (k−1)-colorings of all 1057 edge deletions
+H_19: |V|=119, |E|=1183, Δ=50
+H_19: verified (k−1)-colorings of all 1183 edge deletions
+H_20: |V|=126, |E|=1316, Δ=53
+H_20: verified (k−1)-colorings of all 1316 edge deletions
+C7 partitions: 162 q+t: {7: 99, 8: 56, 9: 7}
+irreducible counts H4..H9: {4: 41160, 5: 832440, 6: 4505760, 7: 9389520, 8: 8184960, 9: 2540160}
+graph6 H4: MhCKM`gL?sP_P_g_?
+graph6 H5: ThCKMbPYBOe_L@E_BOKW?b?DE?AK?LC?Aa?@
+H4 sample coloring (0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 0, 2, 2, 2) exact full paths 4
+H_4 ordered four-colorings: cycle colorings 2184 full-path counts capped at two {2: 41664}
+H_5 sorted-clique ordered five-colorings: {2: 1039500}

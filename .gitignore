@@ -1,0 +1,14 @@
+.DS_Store
+.lake/
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.py.before-*
+*.py.kernel-attempt
+LeanApiCheck.lean

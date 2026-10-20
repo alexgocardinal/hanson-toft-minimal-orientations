@@ -1,0 +1,62 @@
+[
+  {
+    "k": 4,
+    "n": 14,
+    "m": 28,
+    "variables": 622,
+    "clauses": 2274,
+    "exact_ordered_cnf_reconstruction": "VERIFIED",
+    "numeric_order_graph6": "VERIFIED",
+    "cnf_sha256": "ecfaccc0f2884346686030b50ec77bb9da7a5d50150ee21a567fb960371e3bb4"
+  },
+  {
+    "k": 5,
+    "n": 21,
+    "m": 56,
+    "variables": 1791,
+    "clauses": 7205,
+    "exact_ordered_cnf_reconstruction": "VERIFIED",
+    "numeric_order_graph6": "VERIFIED",
+    "cnf_sha256": "3c05e99d657a1e34ff9851e6732915dc391fe436a4826c09e634aa135e9ac23a"
+  },
+  {
+    "k": 6,
+    "n": 28,
+    "m": 91,
+    "variables": 4066,
+    "clauses": 16972,
+    "exact_ordered_cnf_reconstruction": "VERIFIED",
+    "numeric_order_graph6": "VERIFIED",
+    "cnf_sha256": "e8a5f0aa6d737dcaae7fa8a460c0826103d7931855d3f544ef771948e79be912"
+  },
+  {
+    "k": 7,
+    "n": 35,
+    "m": 133,
+    "variables": 7951,
+    "clauses": 33738,
+    "exact_ordered_cnf_reconstruction": "VERIFIED",
+    "numeric_order_graph6": "VERIFIED",
+    "cnf_sha256": "a5f881f24e08ab1cb9a1f7bcbfa44609914a196d9bf6ed914e87b96fec9589ce"
+  },
+  {
+    "k": 8,
+    "n": 42,
+    "m": 182,
+    "variables": 14034,
+    "clauses": 60002,
+    "exact_ordered_cnf_reconstruction": "VERIFIED",
+    "numeric_order_graph6": "VERIFIED",
+    "cnf_sha256": "9063c7305a525691c2f68428247b6c85327aba41f5cb279cf46c2c41b65ce782"
+  },
+  {
+    "k": 9,
+    "n": 49,
+    "m": 238,
+    "variables": 22987,
+    "clauses": 98599,
+    "exact_ordered_cnf_reconstruction": "VERIFIED",
+    "numeric_order_graph6": "VERIFIED",
+    "cnf_sha256": "f38e7a69dc87f4f631635fca576b47715a6374f66c0dd55d3ab5a0a4ab995bea"
+  }
+]

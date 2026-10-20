@@ -1,0 +1,5 @@
+H_5: candidate cycle colorings=16380, irreducible sorted-Q colorings=832440, path count 0=0, path count 1=0, path count >=2=832440
+H_6: candidate cycle colorings=78120, irreducible sorted-Q colorings=4505760, path count 0=0, path count 1=0, path count >=2=4505760
+H_7: candidate cycle colorings=279930, irreducible sorted-Q colorings=9389520, path count 0=0, path count 1=0, path count >=2=9389520
+H_8: candidate cycle colorings=112896, irreducible sorted-Q colorings=8184960, path count 0=0, path count 1=0, path count >=2=8184960
+H_9: candidate cycle colorings=3528, irreducible sorted-Q colorings=2540160, path count 0=0, path count 1=0, path count >=2=2540160

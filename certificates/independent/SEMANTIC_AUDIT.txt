@@ -1,0 +1,34 @@
+INDEPENDENT CAPPED-PATH ENCODING AUDIT
+
+Scope: exact graph and CNF reconstruction, interpretation of the capped-path variables, soundness of symmetry restrictions, and portable checking of the six finite UNSAT bases k=4,5,6,7,8,9. The graph-family lifting argument, k-criticality, and equivalence with arbitrary minimum orientations are outside this receipt's scope and are being checked separately.
+
+Graph construction:
+Take a seven-cycle x0,...,x6. At each i attach a clique Qi of size k-3, joining every member of Qi to x_i,x_{i+1},x_{i+3}, with subscripts modulo7. Vertex labels are x_i=i; Qi occupies the consecutive numeric block starting at7+i(k-3). The independent standard-library reconstruction checks every graph edge and the numeric-order graph6 string against the archived JSON, then reconstructs every clause and compares both the plain and compressed CNFs exactly, in clause order.
+
+Color and path meaning:
+Exactly one color in0,...,k-1 is assigned to every vertex; endpoints of each edge have different colors. Orient each edge from lower to higher color. A directed path with k vertices must use all k colors, consecutively in order. Therefore enumerating prefixes through colors0,...,c counts exactly the prefixes relevant to full k-vertex directed paths.
+For each vertex v and color c:
+R(v,c) is true iff at least one such prefix ends at v.
+M(v,c) is true iff at least two distinct such prefixes end at v.
+At c=0, R(v,0) equals the color-zero selector and M(v,0) is false. For c>0, R(v,c) equals the conjunction of the color-c selector with the disjunction of R(u,c-1) over neighbors u. M(v,c) equals the color-c selector conjoined with either an incoming M(u,c-1), or two incoming R(u,c-1) variables from distinct neighbors.
+This recurrence is exact: prefixes from distinct last predecessors are distinct paths; a predecessor with multiple prefixes contributes multiple paths. Strict color increase excludes repeated vertices. Tseitin OR and AND gates have both directions of implication, so auxiliary variables cannot be chosen freely to hide extra paths.
+At the last color, every M is false, some R is true, and at most one R is true. Hence exactly one full k-vertex directed path exists. The sequential cardinality encoding was reconstructed independently, without PySAT, using the standard n-1 auxiliary chain.
+
+Symmetry restrictions:
+1. Every Qi is a clique of true twins, so permutations within Qi are graph automorphisms. Sorting its assigned colors by numeric vertex order preserves the number of full increasing paths.
+2. Rotating the seven-cycle together with all attached cliques is a graph automorphism. Therefore a cycle vertex with smallest assigned color may be renamed x0.
+3. Global color reversal sends every increasing full path to its reversed full path, bijectively preserving their count. Let a and b be the minimum and maximum colors appearing on the cycle. One of a and k-1-b is at most floor((k-1)/2). Choose the original or reversed coloring accordingly, rotate a minimum to x0, and sort each clique again. This proves that the low-half restriction on x0 and the cycle-minimum restriction can be imposed simultaneously. No arbitrary permutation of the ordered color classes is used.
+
+Portable proof replay:
+python round3/edge_flows/independent/reconstruct_capped.py
+python round3/edge_flows/independent/check_lrat.py
+Both commands require only Python's standard library. Each LRAT proof was emitted from the original DRUP proof using DRAT-trim. The independent Python checker does not trust the emitter: every positive hint must identify an existing unit or conflicting clause under the negated proposed lemma, and every added lemma must obtain a contradiction. Negative RAT hints are rejected. The empty clause is independently checked. Proof deletions are ignored safely, retaining only previously verified logical consequences of the initial formula.
+
+Results:
+All six exact CNF reconstructions PASS.
+All six graph6 reconstructions PASS.
+All six positive-hint LRAT refutations PASS, with checked lemma counts360,1734,4003,6913,11699,16194 respectively.
+The largest replay takes about1.4seconds. Full records and hashes are in reconstruction_results.json and lrat_results.json.
+The separate watched-literal raw-RUP checker passed k=4 through7 before the larger run was stopped in favor of the completed faster hinted replay. It is not claimed to have completed k=8 or9.
+
+No encoding corruption, omitted reverse gate implication, path-count domain error, or unsafe symmetry restriction was found.

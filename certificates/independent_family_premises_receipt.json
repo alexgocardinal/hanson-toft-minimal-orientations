@@ -1,0 +1,161 @@
+{
+  "cycle_partition_count": 162,
+  "maximum_q_plus_t": 9,
+  "maximum_two_color_triples": 6,
+  "one_three_color_triple_pattern": [
+    0,
+    1,
+    0,
+    2,
+    1,
+    0,
+    1
+  ],
+  "q_t_distribution": [
+    {
+      "q": 3,
+      "t": 5,
+      "count": 14
+    },
+    {
+      "q": 3,
+      "t": 6,
+      "count": 7
+    },
+    {
+      "q": 4,
+      "t": 3,
+      "count": 35
+    },
+    {
+      "q": 4,
+      "t": 4,
+      "count": 35
+    },
+    {
+      "q": 5,
+      "t": 2,
+      "count": 49
+    },
+    {
+      "q": 5,
+      "t": 3,
+      "count": 7
+    },
+    {
+      "q": 6,
+      "t": 1,
+      "count": 14
+    },
+    {
+      "q": 7,
+      "t": 0,
+      "count": 1
+    }
+  ],
+  "family_checks": [
+    {
+      "k": 4,
+      "n": 14,
+      "m": 28,
+      "all_edge_deletion_colorings_checked": 28
+    },
+    {
+      "k": 5,
+      "n": 21,
+      "m": 56,
+      "all_edge_deletion_colorings_checked": 56
+    },
+    {
+      "k": 6,
+      "n": 28,
+      "m": 91,
+      "all_edge_deletion_colorings_checked": 91
+    },
+    {
+      "k": 7,
+      "n": 35,
+      "m": 133,
+      "all_edge_deletion_colorings_checked": 133
+    },
+    {
+      "k": 8,
+      "n": 42,
+      "m": 182,
+      "all_edge_deletion_colorings_checked": 182
+    },
+    {
+      "k": 9,
+      "n": 49,
+      "m": 238,
+      "all_edge_deletion_colorings_checked": 238
+    },
+    {
+      "k": 10,
+      "n": 56,
+      "m": 301,
+      "all_edge_deletion_colorings_checked": 301
+    },
+    {
+      "k": 11,
+      "n": 63,
+      "m": 371,
+      "all_edge_deletion_colorings_checked": 371
+    },
+    {
+      "k": 12,
+      "n": 70,
+      "m": 448,
+      "all_edge_deletion_colorings_checked": 448
+    },
+    {
+      "k": 13,
+      "n": 77,
+      "m": 532,
+      "all_edge_deletion_colorings_checked": 532
+    },
+    {
+      "k": 14,
+      "n": 84,
+      "m": 623,
+      "all_edge_deletion_colorings_checked": 623
+    },
+    {
+      "k": 15,
+      "n": 91,
+      "m": 721,
+      "all_edge_deletion_colorings_checked": 721
+    },
+    {
+      "k": 16,
+      "n": 98,
+      "m": 826,
+      "all_edge_deletion_colorings_checked": 826
+    },
+    {
+      "k": 17,
+      "n": 105,
+      "m": 938,
+      "all_edge_deletion_colorings_checked": 938
+    },
+    {
+      "k": 18,
+      "n": 112,
+      "m": 1057,
+      "all_edge_deletion_colorings_checked": 1057
+    },
+    {
+      "k": 19,
+      "n": 119,
+      "m": 1183,
+      "all_edge_deletion_colorings_checked": 1183
+    },
+    {
+      "k": 20,
+      "n": 126,
+      "m": 1316,
+      "all_edge_deletion_colorings_checked": 1316
+    }
+  ],
+  "scope": "Criticality and induction premises only; finite orientation UNSAT base cases checked separately."
+}

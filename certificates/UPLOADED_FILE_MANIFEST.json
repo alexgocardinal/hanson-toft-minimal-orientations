@@ -1,0 +1,130 @@
+{
+  "source": "Graph-theory-counterexamples-round-three.zip/round3/edge_flows",
+  "copied_files": [
+    {
+      "path": "verify_family.py",
+      "sha256": "5a4bdd46b850b7842b3e580163591259e4aa267f64cdfe5ef6f0420e0157e95d",
+      "bytes": 1032
+    },
+    {
+      "path": "independent_family_premises.py",
+      "sha256": "131df090d2521265b54e4417ed59aea873b13559921647928f279ff1968f21fb",
+      "bytes": 4344
+    },
+    {
+      "path": "independent_family_premises.md",
+      "sha256": "6d81b99a07479515983634354b8e3e76bf2c57e54a6d85a09677c68e1fb8634f",
+      "bytes": 7455
+    },
+    {
+      "path": "HansonToft_family_proof.md",
+      "sha256": "561ea8264c29a4e4276ce89d1594541cc1feeb5fdaecdba5e9266c3d302fc7e1",
+      "bytes": 14759
+    },
+    {
+      "path": "independent/reconstruct_capped.py",
+      "sha256": "2152be2d03a4585c47548e7d08f5f3e295dac07603d2cff1af36e4e85c97fdf3",
+      "bytes": 3956
+    },
+    {
+      "path": "independent/check_lrat.py",
+      "sha256": "6b5f5498a8af1418c14867e3ed415c17410f31a2f1ea1abfe2ea26f50857ccab",
+      "bytes": 2956
+    },
+    {
+      "path": "independent/SEMANTIC_AUDIT.txt",
+      "sha256": "b035004cbaf321efe9179c301c8f8c7339204dc0fbebf8680ad01d9d89a9b536",
+      "bytes": 4543
+    },
+    {
+      "path": "HansonToft_k4.json",
+      "sha256": "9ae4be9958dac9779bb823a34df6521729d971f4c54392ae6da1bfb1bf60ca40",
+      "bytes": 1164
+    },
+    {
+      "path": "HansonToft_k4_formula.cnf",
+      "sha256": "ecfaccc0f2884346686030b50ec77bb9da7a5d50150ee21a567fb960371e3bb4",
+      "bytes": 27042
+    },
+    {
+      "path": "independent/HansonToft_k4.lrat.gz",
+      "sha256": "2d3ef1f0ef8da3c95c5c0ab9b7ec42a101436e6c03ab4f94afe623e6041929e3",
+      "bytes": 24958
+    },
+    {
+      "path": "HansonToft_k5.json",
+      "sha256": "4cd2772d403b2ebee780388d98f8d3ae9f1f3508e304a29829fddb8ba123ddfd",
+      "bytes": 2055
+    },
+    {
+      "path": "HansonToft_k5_formula.cnf",
+      "sha256": "3c05e99d657a1e34ff9851e6732915dc391fe436a4826c09e634aa135e9ac23a",
+      "bytes": 96769
+    },
+    {
+      "path": "independent/HansonToft_k5.lrat.gz",
+      "sha256": "5ee75f3cc0fce05a4f49fc3ad91ed535506d9ed6389fb7342d5bc69388e5954a",
+      "bytes": 148683
+    },
+    {
+      "path": "HansonToft_k6.json",
+      "sha256": "829126b14076535e3e7cc2c516b65c1dcb0840798bcc43c7dc1ee6f5756bf6aa",
+      "bytes": 3180
+    },
+    {
+      "path": "HansonToft_k6_formula.cnf",
+      "sha256": "e8a5f0aa6d737dcaae7fa8a460c0826103d7931855d3f544ef771948e79be912",
+      "bytes": 239237
+    },
+    {
+      "path": "independent/HansonToft_k6.lrat.gz",
+      "sha256": "5c3e35515441d00dfa0fd0827609d1df7e88fbd37d8eb651e3230f9837308819",
+      "bytes": 403407
+    },
+    {
+      "path": "HansonToft_k7.json",
+      "sha256": "b3c1bd90a6845b2d8c2ac2745ee300d9380ce567c50072758ea07a3617fad9c6",
+      "bytes": 4539
+    },
+    {
+      "path": "HansonToft_k7_formula.cnf",
+      "sha256": "a5f881f24e08ab1cb9a1f7bcbfa44609914a196d9bf6ed914e87b96fec9589ce",
+      "bytes": 484536
+    },
+    {
+      "path": "independent/HansonToft_k7.lrat.gz",
+      "sha256": "ecaf31ad4ea70949039721602d0eabe978412638c72086736634ff0c80f3868b",
+      "bytes": 787253
+    },
+    {
+      "path": "HansonToft_k8.json",
+      "sha256": "8dac3ac4b93f28a5d84244b270d77e987d21d362cfc0e7293cd4a1fa008bc318",
+      "bytes": 6126
+    },
+    {
+      "path": "HansonToft_k8_formula.cnf",
+      "sha256": "9063c7305a525691c2f68428247b6c85327aba41f5cb279cf46c2c41b65ce782",
+      "bytes": 894473
+    },
+    {
+      "path": "independent/HansonToft_k8.lrat.gz",
+      "sha256": "09e90daee90aabe819570a9ef2abb11c6e5e2853d9a015f7cfdeabf0fe003a3b",
+      "bytes": 1536549
+    },
+    {
+      "path": "HansonToft_k9.json",
+      "sha256": "90187dd0df54a30e5ee35ebb7f346318dbdf51912e00f9d6650f770a50370a43",
+      "bytes": 7950
+    },
+    {
+      "path": "HansonToft_k9_formula.cnf",
+      "sha256": "f38e7a69dc87f4f631635fca576b47715a6374f66c0dd55d3ab5a0a4ab995bea",
+      "bytes": 1519726
+    },
+    {
+      "path": "independent/HansonToft_k9.lrat.gz",
+      "sha256": "19892ac5c9904b9a45cac335a22fb17570896cde8be2441dcb6e4d5cb30e85f4",
+      "bytes": 2297876
+    }
+  ]
+}
