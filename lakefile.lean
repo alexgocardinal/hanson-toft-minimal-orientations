@@ -7,7 +7,7 @@ package hansonToft where
 lean_lib HansonToft where
   roots := #[
     `HansonToft, `CycleCheck, `GraphLemmas,
-    `BlockLemmas, `PathInsertion, `SimplePathExtension, `PathRecovery, `ColorRanks, `DeletionCorrespondence, `ColorDeletion, `RankedPaths, `RankInsertion, `InteriorFullPath, `EndpointFullPaths, `FullPathExtension, `RecoverableExtension, `EmbeddedPaths, `ConditionalPathLift,
+    `BlockLemmas, `PathInsertion, `SimplePathExtension, `PathRecovery, `ColorRanks, `DeletionCorrespondence, `ColorDeletion, `RankedPaths, `RankInsertion, `InteriorFullPath, `EndpointFullPaths, `FullPathExtension, `RecoverableExtension, `EmbeddedPaths, `ConditionalPathLift, `TwoPathReduction,
     `CertificateK4, `CertificateK5, `CertificateK6,
     `CertificateK7, `CertificateK8, `CertificateK9
   ]
