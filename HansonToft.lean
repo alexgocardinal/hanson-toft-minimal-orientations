@@ -6,7 +6,8 @@ import Init
   This file intentionally contains no proof of the family theorem. In particular,
   `cycleFiniteCheck` is a Boolean program, not a theorem that its result is true,
   and `sixBases` is a proposition, not a certificate of its truth. The external
-  CNF/LRAT traces supplied with the project have not been imported into Lean.
+  CNF/LRAT traces are checked in the separate CertificateK4--CertificateK9
+  modules using native evaluation. The full graph theorem remains unproved here.
 -/
 
 namespace HansonToft

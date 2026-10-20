@@ -7,7 +7,10 @@
 - The finite cycle-checking program returns true.
 - Each embedded CNF for k = 4, 5, 6, 7, 8, 9 is unsatisfiable,
   using Lean's standard-library LRAT soundness theorem and native evaluation.
-- All nine project modules build successfully.
+- The implemented project modules build successfully.
+- Block incidence and available insertion vertices are proved.
+- Structural interior path insertion preserves adjacency and distinctness.
+- List recovery by deletion and the resulting distinctness principle are proved.
 
 The certificate theorems use `decide +native`. Their axiom reports include
 the native-evaluation axiom, so they rely on Lean's native computation

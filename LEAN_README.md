@@ -23,3 +23,9 @@ uniform reduction, and the arbitrary-orientation argument remain to be
 proved in Lean.
 
 See VERIFICATION_STATUS.md for the complete verification boundary.
+
+Additional proved structural lemmas are in BlockLemmas.lean,
+PathInsertion.lean, SimplePathExtension.lean, and PathRecovery.lean.
+They establish block incidence, available insertion vertices, structural
+path insertion, and list recovery. They do not yet establish the full
+ordered-color path extension or the infinite reduction.
