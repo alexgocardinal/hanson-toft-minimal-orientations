@@ -1,4 +1,5 @@
 \documentclass[11pt]{amsart}
+\usepackage{lmodern}
 \usepackage{amsmath,amssymb,amsthm,booktabs}
 \usepackage[hidelinks]{hyperref}
 
@@ -29,7 +30,8 @@ prove that it does.  A short identity for color classes on the cycle
 reduces the infinite statement to the six cases $4\leq k\leq9$.  For
 these cases we give Boolean encodings of a unique full increasing path,
 unsatisfiability certificates, and a small independent checker that
-reconstructs each formula and verifies its proof.
+reconstructs each formula and verifies its proof.  The six formula
+refutations are also verified in Lean using native evaluation.
 \end{abstract}
 \maketitle
 
@@ -318,6 +320,16 @@ CNF, contrary to its refutation.  A full path exists by the argument
 before this section, so every coloring has at least two.
 \end{proof}
 
+The companion Lean~4.35.0 development also proves unsatisfiability of
+the six embedded formulas using the standard-library LRAT soundness
+theorem.\footnote{These proofs use \texttt{decide +native} and rely on
+Lean's compiler and native-evaluation infrastructure.  Basic adjacency
+properties and the Boolean cycle computation are also proved in Lean.}
+The encoding and symmetry arguments, criticality, the uniform reduction,
+and the orientation--coloring criterion remain outside the formal
+development.  Thus the Lean results concern the finite formulas and
+do not constitute a formalization of Theorem~\ref{thm:main}.
+
 As a separate finite check, a direct path-counting program enumerates
 all 41,664 colorings of $H_4$ up to permutations inside the cliques
 and 25,452,840 \emph{irreducible} colorings of $H_5,\ldots,H_9$,
@@ -352,16 +364,10 @@ bound $f(k)\leq3k-8$ for the degree threshold $f(k)$ defined in
 $f(6)\leq10$ and $f(7)\leq13$.
 
 \section*{Data availability}
-The supplementary archive supplied with this manuscript contains the
-six graph edge lists, exact CNFs, positive-hint LRAT proofs, Python
-source for formula reconstruction and proof checking, and a
-separate direct enumeration program.  From the package root, the
-single command \texttt{python certificates/verify\_family.py}
-checks the cycle and criticality premises, reconstructs all six
-formulas, and checks all six LRAT refutations.  This command requires
-only the Python standard library and no SAT solver.  A public
-repository location for the archive must be added upon deposit
-before submission.
+The graph data, formulas, refutations, checking and enumeration code,
+and Lean sources are available in the accompanying
+\href{https://github.com/alexgocardinal/hanson-toft-minimal-orientations}{GitHub repository},
+which pins the Lean version and documents the verification scope.
 
 \begin{thebibliography}{9}
 \bibitem{Gallai}
