@@ -8,6 +8,9 @@
 - Each embedded CNF for k = 4, 5, 6, 7, 8, 9 is unsatisfiable,
   using Lean's standard-library LRAT soundness theorem and native evaluation.
 - The implemented project modules build successfully.
+- Color-rank compression and expansion are inverse away from the deleted rank.
+- Deleting one selected vertex per clique gives the preceding graph.
+- Proper-coloring reduction is proved conditional on a specified common deleted color.
 - Block incidence and available insertion vertices are proved.
 - Structural interior path insertion preserves adjacency and distinctness.
 - List recovery by deletion and the resulting distinctness principle are proved.
