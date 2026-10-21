@@ -163,7 +163,7 @@ theorem completed_classified_clauses_hold
       finite_numbering_surjective s ⟨j, List.mem_range.mp hj⟩
     have h := completed_rank_zero_clauses hk4 hk9 color v
     simp only [colorVariable, reachVariable, multiplicityVariable,
-      encodingC, encodingR, encodingM, hNumber] at h
+      hNumber] at h
     simp only [List.mem_cons, List.not_mem_nil, or_false] at hRest
     rcases hRest with rfl | rfl | rfl
     · exact h.1
