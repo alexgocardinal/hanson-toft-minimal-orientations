@@ -116,7 +116,7 @@ theorem arc_bounded_nat_maximum
         exact hMaximum m (by omega) hPm
 
 theorem exists_bounded_arc_ranking {k : Nat}
-    (hk : 0 < k)
+    (_hk : 0 < k)
     (e : Vertex k → Vertex k → Prop)
     (hBound : ∀ v n, ArcLengthFrom e n v → n < k) :
     ∃ color : Vertex k → Fin k,
