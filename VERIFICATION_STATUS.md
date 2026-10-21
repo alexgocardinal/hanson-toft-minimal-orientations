@@ -1,34 +1,28 @@
 # Verification status
 
-## Successfully checked in Lean 4.35.0
+## Proved in Lean 4.35.0
 
-- The graph definitions compile.
-- Adjacency is symmetric and irreflexive.
-- The finite cycle-checking program returns true.
-- Each embedded CNF for k = 4, 5, 6, 7, 8, 9 is unsatisfiable,
-  using Lean's standard-library LRAT soundness theorem and native evaluation.
-- The implemented project modules build successfully.
-- Color-rank compression and expansion are inverse away from the deleted rank.
-- Deleting one selected vertex per clique gives the preceding graph.
-- Proper-coloring reduction is proved conditional on a specified common deleted color.
-- Block incidence and available insertion vertices are proved.
-- Structural interior path insertion preserves adjacency and distinctness.
-- List recovery by deletion and the resulting distinctness principle are proved.
+- The graph has chromatic number k for every k >= 4.
+- Every edge deletion and vertex deletion admits a (k-1)-coloring.
+- Every proper subgraph admits a (k-1)-coloring.
+- The cycle counting bounds t <= 6 and q+t <= 9 hold for arbitrary palettes.
+- For k >= 10, a color absent from the cycle occurs in every clique.
+- Deleting that color gives the preceding graph and a proper smaller coloring.
+- Full increasing paths lift with recovery; distinct paths remain distinct.
+- The uniform two-path induction step is proved.
+- The family coloring theorem follows conditionally from TwoPathBases.
 
-The certificate theorems use `decide +native`. Their axiom reports include
-the native-evaluation axiom, so they rely on Lean's native computation
-infrastructure. They are not kernel-evaluation-only certificate proofs.
+The six embedded CNFs are proved unsatisfiable using the standard-library
+LRAT soundness theorem and `decide +native`. These certificate proofs rely
+on native-evaluation axioms; they are not kernel-evaluation-only proofs.
+The independent Python certificate replay also passes.
 
-## Not yet formally proved
+## Still required for the complete theorem
 
-- That every hypothetical unique-path graph coloring yields a satisfying
-  assignment of the corresponding embedded CNF, including symmetry reductions.
-- That the finite cycle program covers all proper cycle colorings.
-- Chromatic number and criticality for the entire graph family.
-- The common-color reduction and injective path extension for all k.
-- The passage from arbitrary orientations to ordered colorings.
-- The complete family theorem stated in HansonToft.lean.
+- Formal graph-to-CNF semantics, including the symmetry reductions.
+- Full-path existence and the six graph-theoretic two-path base cases.
+- The argument covering arbitrary orientations.
+- An unconditional proof of completeFamilyStatement.
 
-The Python certificate replay also passes independently. The human-readable
-argument remains a computer-assisted proof; the complete graph-theoretic
-result must not yet be described as fully formalized in Lean.
+TwoPathBases is an explicit hypothesis, not a proved theorem or an axiom.
+The complete result must not yet be described as fully formalized in Lean.
